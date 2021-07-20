@@ -1,5 +1,18 @@
-# webdev-challenges
-Desafios de Desenvolvimento Web
+# WebDev
+
+Um espaço para compartilhar minha trajetória de estudos, desafios e projetos que auxiliem na minha busca de desenvolvimento profissional e resulte em oportunidades.
+
+## WebDev Challenge (Desafio)
+
+Atividades práticas que proporcionam desafios e possibilitem o aprendizado com cenários reais ou acrescentem nos meus estudos de Desenvolvimento Web (Full Stack).
+
+<!-- 
+### Categorias
+
+- **[Categoria 1](Link)**
+- **[Categoria 2](Link)**
+- **[Categoria 3](Link)** 
+-->
 
 ## Template
 
