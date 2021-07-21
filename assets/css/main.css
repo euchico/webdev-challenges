@@ -1,30 +1,32 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Source+Code+Pro&display=swap");
 html {
   scroll-behavior: smooth;
-  color: #333333; }
+  color: #343A40; }
 
 a {
   text-decoration: none; }
 
-#home .logo {
-  height: 140px; }
+nav #navbar-header,
+nav .navbar {
+  background-color: #15432A !important; }
 
-#course-itens .cover {
-  width: 140px;
-  height: 140px;
-  filter: grayscale(1); }
+main h1 {
+  color: #343A40; }
+main a {
+  background-color: #2D7E51 !important; }
+main a:hover {
+  background-color: #15432A; }
 
-#course h1, #course h2, #course h3 {
-  font-weight: bold; }
+footer a {
+  color: #343A40 !important; }
+
 #course h1 {
-  font-size: 2em;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-weight: bold; }
 #course h2 {
-  font-size: 2.5em; }
+  font-weight: bold; }
 #course h3 {
-  font-size: 2em; }
-#course h4 {
-  font-size: 1.5em; }
+  font-weight: bold; }
 #course a {
   color: #343A40; }
   #course a.disabled {
@@ -40,6 +42,7 @@ a {
 #sidebar {
   min-height: 100vh;
   margin-left: 0;
+  background-color: #15432A;
   -webkit-transition: margin .25s ease-out;
   -moz-transition: margin .25s ease-out;
   -o-transition: margin .25s ease-out;
@@ -50,9 +53,15 @@ a {
     text-align: center; }
   #sidebar .list-group {
     width: 15rem; }
+    #sidebar .list-group a {
+      color: #FFFFFF;
+      background-color: #15432A; }
+    #sidebar .list-group a.disabled {
+      color: #343A40; }
     #sidebar .list-group .list-group-item:hover {
-      background-color: #495056 !important; }
-  #sidebar a:hover, #sidebar a:focus {
+      background-color: #2D7E51 !important; }
+  #sidebar a:hover,
+  #sidebar a:focus {
     background-color: inherit; }
 
 @media screen and (max-width: 768px) {

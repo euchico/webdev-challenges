@@ -2,63 +2,59 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Source+Code+Pro&display=swap');
 
 
+// IMPORT ==============================
+$c-primary: #15432A;
+$c-primary-shade: #2D7E51;
+$c-text: #343A40;
+$c-white: #FFFFFF;
+
+
 // GERAL ==============================
 html{
   scroll-behavior: smooth;
-  color: #333333;
+  color: $c-text;
 }
 
-a{
-  text-decoration: none;
-}
+a{ text-decoration: none; }
 
 
 // PÁGINA:HOME ==============================
-#home{
-  .logo{
-    height: 140px;
-  }
+nav #navbar-header,
+nav .navbar{
+  background-color: $c-primary !important;
 }
 
-#course-itens{
-  .cover{
-    width:140px; 
-    height:140px; 
-    filter: grayscale(1);
-  }
+main{  
+  h1{ color: $c-text; }
+  
+  a{ background-color: $c-primary-shade !important; }
+  a:hover{ background-color: $c-primary; }
+}
+
+footer{
+  a{ color: $c-text !important; }
 }
 
 
 // PÁGINA:CURSO ==============================
 #course{
-  h1,h2,h3{
+  h1{
+    text-transform: uppercase;
     font-weight: bold;
   }
-
-  h1{
-    font-size: 2em;
-    text-transform: uppercase;
-  }
-   
   h2{
-    font-size: 2.5em;
+    font-weight: bold;
   }
-    
   h3{
-    font-size: 2em;
+    font-weight: bold;
   }
-
-  h4{
-    font-size: 1.5em;
-  }
-
   a{
-    color: #343A40;
+    color: $c-text;
+    
     &.disabled{
-      background-color: #FFFFFF !important;
+      background-color: $c-white !important;
     }
   }
-
 }
 
 #course-description{
@@ -69,49 +65,51 @@ a{
 }
 
 #content.show{
-  #sidebar{
-    margin-left: -15rem;
-  }
+  #sidebar{ margin-left: -15rem; }
  }
 
 #sidebar{
   min-height: 100vh;
   margin-left: 0;
+  background-color: $c-primary;
 
   -webkit-transition: margin .25s ease-out;
   -moz-transition: margin .25s ease-out;
   -o-transition: margin .25s ease-out;
   transition: margin .25s ease-out;
+
   .sidebar-footer{
     padding: 0.875rem 1.25rem;
     font-weight: bold;
     text-align: center;
   }
+  
   .list-group {
     width: 15rem;
+    
+    a{
+      color: $c-white;
+      background-color: $c-primary;
+    }
+    a.disabled{ color: $c-text; }
+
     .list-group-item:hover{
-      background-color: #495056 !important;
+      background-color: $c-primary-shade !important;
     }
   }
-  a:hover, a:focus{
+  a:hover,
+  a:focus{
     background-color: inherit;
   }
 }
 
 @media screen and (max-width: 768px){
   #content.show{
-    #sidebar{
-      margin-left: 0;
-    }
+    #sidebar{ margin-left: 0; }
   }
 
-  #sidebar{
-    margin-left: -15rem;
-  }
-
-  #note-content{
-    overflow: hidden;
-  }
+  #sidebar{ margin-left: -15rem; }
+  #note-content{ overflow: hidden; }
 
   .show{
     .nav-top{
@@ -126,11 +124,6 @@ a{
 }
 
 .code{
-  span{
-    font-weight: 100;
-  }
-
-  button{
-    font-size: .6em;
-  }
+  span{ font-weight: 100; }
+  button{ font-size: .6em; }
 }

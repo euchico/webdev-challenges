@@ -9,25 +9,25 @@
   <!-- SEO -->
   <meta http-equiv="content-language" content="pt-br">
   <meta name="author" content="Francisco de Paula (euCHICO)">
-  <meta name="description" content="Espaço voltado a desafios que apoiem meus estudos relacionado ao Desenvolvimento Web.">
-  <meta name="creator" content="Francisco de Paula (euChico)">
+  <meta name="description" content="Arquivos e Projetos do desafio {{TEMPLATE}}.">
+  <meta name="creator" content="Francisco de Paula (euCHICO)">
   <meta name="robots" content="index, follow">
 
   <meta property="og:locale" content="pt_BR">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="WebDev Challenge — TEMPLATE">
-  <meta property="og:description" content="Arquivos de desafios relacionado a TEMPLATE.">
+  <meta property="og:title" content="WebDev Challenge — {{TEMPLATE}}">
+  <meta property="og:description" content="Arquivos e Projetos do desafio {{TEMPLATE}}.">
   <meta property="og:url" content="https://euchico.github.io/webdev-challenge/TEMPLATE">
-  <meta property="og:site_name" content="WebDev Cookbook">
+  <meta property="og:site_name" content="WebDev Challenge">
   <meta property="og:image" content="https://euchico.github.io/images/euchico-perfil-3.jpg">
   <meta property="og:image:width" content="300">
   <meta property="og:image:height" content="300">
 
   <meta name="twitter:card" value="summary">
-  <meta name="twitter:site" content="@_euchico">
-  <meta name="twitter:creator" content="@_euchico">
-  <meta name="twitter:title" content="WebDev Challenge — TEMPLATE">
-  <meta name="twitter:description" content="Arquivos de desafios relacionado a TEMPLATE.">
+  <meta name="twitter:site" content="@euchicoart">
+  <meta name="twitter:creator" content="@euchicoart">
+  <meta name="twitter:title" content="WebDev Challenge — {{TEMPLATE}}">
+  <meta name="twitter:description" content="Arquivos e Projetos do desafio {{TEMPLATE}}.">
   <meta name="twitter:image" content="https://euchico.github.io/images/euchico-perfil-3.jpg">
   <!-- / SEO -->
 
@@ -38,24 +38,27 @@
   <!-- / ESTILOS -->
 
   <link rel="icon" href="../favicon.ico">
-  <title>WebDev Challenge — TEMPLATE</title>
+  <title>WebDev Challenge — {{TEMPLATE}}</title>
 <head>
 
 <body id="course">
   <div  id="content" class="d-flex">
     <!-- MENU LATERAL -->
-    <div id="sidebar" class="bg-dark">
-      <div class="sidebar-heading font-weight-bold text-center p-3">
-        <a href="/webdev-challenge"><h1 class="text-white">WebDev<br>Challenge</h1></a>
+    <div id="sidebar">
+      <div class="sidebar-heading fw-bold text-center p-3">
+        <a href="/webdev-cookbook"><h1 class="fs-2 text-white">WebDev<br>Challenge</h1></a>
       </div>
       
       <div class="list-group list-group-flush">
-        <a href="" class="list-group-item bg-dark disabled">Pessoal</a>
-        <a href="" class="list-group-item bg-dark text-muted">Curso 1</a>
+        <a class="list-group-item disabled" href="" >Desafio 1</a>
+        <a class="list-group-item" href="" >Desafio 2</a>
+        <a class="list-group-item" href="" >Desafio 3</a>
+        <a class="list-group-item" href="" >Desafio 4</a>
+        <a class="list-group-item" href="" >Desafio 5</a>
       </div>
       
-      <div class="sidebar-footer font-weight-bold text-center p-3">
-        <a class="text-white" href="https://euchico.github.io" target="_blank">euCHICO</a>
+      <div class="sidebar-footer fw-bold text-center p-3">
+        <a class="text-white" href="https://euchico.com/" target="_blank">euCHICO</a>
       </div>
     </div>
     <!-- / MENU LATERAL -->
@@ -73,16 +76,34 @@
 
       <div class="container-fluid">
         <h2 class="mt-4">Título</h2> <!-- TÍTULO -->
+        <!-- DESCRIÇÃO -->
+        <div id="course-description">
+          <p class="fw-light m-0">
+            <span class="fw-bold">Proposta:</span> 
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+          
+          <p class="fw-light m-0">
+            <span class="fw-bold">Origem/Referência:</span>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+
+          <p class="fw-light m-0">
+            <span class="fw-bold">Link:</span>
+            <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
+          </p>
+        </div>
+        <!-- / DESCRIÇÃO -->
 
         <!-- ÍNDICE -->
         <div id="index" class="border border-secondary rounded overflow-hidden bg-light p-3 my-5">
           <h4 class="text-dark">Índice:</h4>
-          <ul class="font-weight-bold m-0">
-            <li><a href="#itemXXX" class="text-muted">Item 1</a></li>
-            <li><a href="#itemXXX" class="text-muted">Item 2</a></li>
+          <ul class="fw-bold m-0">
+            <li><a class="text-muted" href="#itemXXX">Item 1</a></li>
+            <li><a class="text-muted" href="#itemXXX">Item 2</a></li>
             <ul>
-              <li><a href="#itemXXX" class="text-muted">Subitem 2.1</a></li>
-              <li><a href="#itemXXX" class="text-muted">Subitem 2.2</a></li>
+              <li><a class="text-muted" href="#itemXXX">Subitem 2.1</a></li>
+              <li><a class="text-muted" href="#itemXXX" >Subitem 2.2</a></li>
             </ul>
           </ul>
         </div>
@@ -93,28 +114,26 @@
         <div id="itemXXX" class="item">
           <div class="item-title d-flex">
             <h3 class="flex-grow-1 mr-5">Item 1</h3> <!-- Item Título -->
-             
+              
             <!-- Botão Topo -->
             <a class="nav-top d-flex align-items-center" href="#">
               topo 
-              <svg class="text-muted ml-1" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-caret-up-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M7.247 4.86l-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z"/></svg>   
+              <svg class="text-muted ml-1 bi bi-caret-up-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.247 4.86l-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z"/>
+              </svg>   
             </a>
             <!-- / Botão Topo -->
           </div>
           
           <!-- Item Conteúdo -->
           <div class="mb-3">
-            <p class="mb-1">
-              Lorem ipsum dolor sit amet:
-            </p>
+            <p class="mb-1">Lorem ipsum dolor sit amet:</p>
 
             <div class="code rounded bg-light d-flex mt-1 p-3">
-              <span id="contentXXX" class="mr-2">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, et! Minima earum suscipit repellendus sapiente. Facere laboriosam nisi voluptate dolorum possimus, eaque, a placeat illo necessitatibus quibusdam deleniti nesciunt itaque.
-              </span> 
+              <span id="contentXXX" class="mr-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, et! Minima earum suscipit repellendus sapiente. Facere laboriosam nisi voluptate dolorum possimus, eaque, a placeat illo necessitatibus quibusdam deleniti nesciunt itaque.</span> 
               
               <div class="clipboard ml-auto">
-                <button onclick="copyContent('contentXXX')" type="button" class="btn btn-outline-secondary d-flex justify-content-end align-items-start p-1">Copiar</button>
+                <button class="btn btn-outline-secondary d-flex justify-content-end align-items-start p-1" type="button" onclick="copyContent('contentXXX')" >Copiar</button>
               </div>
             </div>
           </div>
@@ -126,11 +145,13 @@
         <div id="itemXXX" class="item">
           <div class="item-title d-flex">
             <h3 class="flex-grow-1 mr-5">Item 2</h3> <!-- Item Título -->
-             
+              
             <!-- Botão Topo -->
             <a class="nav-top d-flex align-items-center" href="#">
               topo 
-              <svg class="text-muted ml-1" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-caret-up-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M7.247 4.86l-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z"/></svg>   
+              <svg class="text-muted ml-1 bi bi-caret-up-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.247 4.86l-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z"/>
+              </svg>   
             </a>
             <!-- / Botão Topo -->
           </div>
@@ -138,26 +159,28 @@
           <!-- Item Conteúdo -->
           <div class="mb-3">
             <p class="mb-1">
-              Lorem ipsum dolor sit amet:
+              Lorem ipsum dolor:
+              <a class="fw-bold" href="#" target="_blank">LINK</a>
+            </p>
+            
+            <p class="mb-1">
+              Lorem ipsum:
+              <a class="fw-bold" href="#" target="_blank">LINK</a>
             </p>
 
             <div class="code rounded bg-light d-flex mt-1 p-3">
-              <span id="contentXXX" class="mr-2">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, et! Minima earum suscipit repellendus sapiente. Facere laboriosam nisi voluptate dolorum possimus, eaque, a placeat illo necessitatibus quibusdam deleniti nesciunt itaque.
-              </span> 
+              <span id="contentXXX" class="mr-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, et! Minima earum suscipit repellendus sapiente. Facere laboriosam nisi voluptate dolorum possimus, eaque, a placeat illo necessitatibus quibusdam deleniti nesciunt itaque.</span> 
               
               <div class="clipboard ml-auto">
-                <button onclick="copyContent('contentXXX')" type="button" class="btn btn-outline-secondary d-flex justify-content-end align-items-start p-1">Copiar</button>
+                <button class="btn btn-outline-secondary d-flex justify-content-end align-items-start p-1" type="button" onclick="copyContent('contentXXX')" >Copiar</button>
               </div>
             </div>
 
             <div class="code rounded bg-light d-flex mt-1 p-3">
-              <span id="contentXXX" class="mr-2">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, et! Minima earum suscipit repellendus sapiente. Facere laboriosam nisi voluptate dolorum possimus, eaque, a placeat illo necessitatibus quibusdam deleniti nesciunt itaque.
-              </span> 
+              <span id="contentXXX" class="mr-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, et! Minima earum suscipit repellendus sapiente. Facere laboriosam nisi voluptate dolorum possimus, eaque, a placeat illo necessitatibus quibusdam deleniti nesciunt itaque.</span> 
               
               <div class="clipboard ml-auto">
-                <button onclick="copyContent('contentXXX')" type="button" class="btn btn-outline-secondary d-flex justify-content-end align-items-start p-1">Copiar</button>
+                <button class="btn btn-outline-secondary d-flex justify-content-end align-items-start p-1" type="button" onclick="copyContent('contentXXX')" >Copiar</button>
               </div>
             </div>
           </div>
@@ -168,17 +191,13 @@
 
           <!-- Item Conteúdo -->
           <div class="mb-3">
-            <p class="mb-1">
-              Lorem ipsum dolor sit amet:
-            </p>
+            <p class="mb-1">Lorem ipsum dolor sit amet:</p>
 
             <div class="code rounded bg-light d-flex mt-1 p-3">
-              <span id="contentXXX" class="mr-2">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, et! Minima earum suscipit repellendus sapiente. Facere laboriosam nisi voluptate dolorum possimus, eaque, a placeat illo necessitatibus quibusdam deleniti nesciunt itaque.
-              </span> 
+              <span id="contentXXX" class="mr-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, et! Minima earum suscipit repellendus sapiente. Facere laboriosam nisi voluptate dolorum possimus, eaque, a placeat illo necessitatibus quibusdam deleniti nesciunt itaque.</span> 
               
               <div class="clipboard ml-auto">
-                <button onclick="copyContent('contentXXX')" type="button" class="btn btn-outline-secondary d-flex justify-content-end align-items-start p-1">Copiar</button>
+                <button class="btn btn-outline-secondary d-flex justify-content-end align-items-start p-1" type="button" onclick="copyContent('contentXXX')" >Copiar</button>
               </div>
             </div>
           </div>
@@ -190,17 +209,13 @@
 
           <!-- Item Conteúdo -->
           <div class="mb-3">
-            <p class="mb-1">
-              Lorem ipsum dolor sit amet:
-            </p>
+            <p class="mb-1">Lorem ipsum dolor sit amet:</p>
 
             <div class="code rounded bg-light d-flex mt-1 p-3">
-              <span id="contentXXX" class="mr-2">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, et! Minima earum suscipit repellendus sapiente. Facere laboriosam nisi voluptate dolorum possimus, eaque, a placeat illo necessitatibus quibusdam deleniti nesciunt itaque.
-              </span> 
+              <span id="contentXXX" class="mr-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, et! Minima earum suscipit repellendus sapiente. Facere laboriosam nisi voluptate dolorum possimus, eaque, a placeat illo necessitatibus quibusdam deleniti nesciunt itaque.</span> 
               
               <div class="clipboard ml-auto">
-                <button onclick="copyContent('contentXXX')" type="button" class="btn btn-outline-secondary d-flex justify-content-end align-items-start p-1">Copiar</button>
+                <button class="btn btn-outline-secondary d-flex justify-content-end align-items-start p-1" type="button" onclick="copyContent('contentXXX')" >Copiar</button>
               </div>
             </div>
           </div>
