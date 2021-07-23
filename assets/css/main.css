@@ -20,19 +20,19 @@ main a:hover {
 footer a {
   color: #343A40 !important; }
 
-#course h1 {
+#code h1 {
   text-transform: uppercase;
   font-weight: bold; }
-#course h2 {
+#code h2 {
   font-weight: bold; }
-#course h3 {
+#code h3 {
   font-weight: bold; }
-#course a {
+#code a {
   color: #343A40; }
-  #course a.disabled {
+  #code a.disabled {
     background-color: #FFFFFF !important; }
 
-#course-description a {
+#code-description a {
   font-weight: bold;
   font-style: italic; }
 
